@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.top-panel {
+  border-bottom: thin solid white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 28px;
+  font-family: arial;
+  font-weight: 100;
+  font-family: 'Michroma', sans-serif;
+}
+
+.menu-outer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 40%;
+}
+
+.menu-item {
+  font-size: 52px;
+}
+
+.selected {
+  color: #ccff15;
+  font-family: arial;
+}
+
+.page-outer {
+  display: flex;
+}
+
+.details-panel {
+  font-size: 42px;
+  width: 60%;
+  border: thin solid white;
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.panel-text {
+  margin: 30px;
+  font-family: arial;
+  font-weight: 900;
+}
+
+.profile-photo {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  border-radius: 2px;
+  box-shadow: 5px 10px inset;
+  
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 196, 20, 0.6), rgba(204, 255, 21, 0.6), rgba(255, 115, 148, 0.6), rgba(255, 204, 216, 0.6)),
+    url('profile.png');
+    background-blend-mode: hard-light;
+    mix-blend-mode: hard-light;
+    background-size: cover;
+}
+
+.new-opportunies {
+  color: rgb(255, 115, 148)
+}
