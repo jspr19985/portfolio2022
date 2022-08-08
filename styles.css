@@ -7,6 +7,13 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+  --neon-yellow: #ccff15;
+  --soft-coral: rgb(255, 115, 148);
+  --basic-sans-serif: arial;
+  --asos-font: 'Poppins', sans-serif;
+}
+
 body {
   background-color: black;
   color: white;
@@ -18,7 +25,6 @@ body {
   justify-content: flex-end;
   padding: 10px;
   font-size: 28px;
-  font-family: arial;
   font-weight: 100;
   font-family: 'Michroma', sans-serif;
 }
@@ -35,7 +41,7 @@ body {
 }
 
 .selected {
-  color: #ccff15;
+  color: var(--neon-yellow);
   font-family: arial;
 }
 
@@ -86,7 +92,7 @@ body {
 }
 
 .new-opportunies {
-  color: rgb(255, 115, 148)
+  color: var(----soft-coral);
 }
 
 /* find-me */
@@ -176,4 +182,62 @@ body {
   margin-left: 22px;
   margin-top: 3px;
   background-color: white;
+}
+
+/* work experience */
+
+.details-panel3 {
+  font-size: 22px;
+  width: 60%;
+  border: thin solid white;
+  height: 700px;  
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 15px;  
+  flex-direction: column;
+}
+
+.font1 {
+  font-family: arial;
+}
+
+.company {
+  font-family: var(--asos-font);
+  letter-spacing: -4px;
+  font-size: 48px;
+}
+
+.jobs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.job-role {
+ color: var(--soft-coral);
+ font-family: var(--basic-sans-serif);
+ margin-bottom: 5px;
+}
+
+.job-dates {
+  font-family: var(--basic-sans-serif);
+  margin-bottom: 30px;
+}
+
+.job-description {
+  font-size: 28px;
+}
+
+.job-technologies {
+  color: var(--neon-yellow);
+  font-family: var(--basic-sans-serif);
+  font-size: 18px;
+}
+
+.asos-name {
+  font-family: var(--asos-font);
+  letter-spacing: -3px;
 }
