@@ -241,3 +241,26 @@ body {
   font-family: var(--asos-font);
   letter-spacing: -3px;
 }
+
+/* edcuation */
+
+.details-panel4 {
+  font-size: 32px;
+  width: 60%;
+  border: thin solid white;
+  height: 700px;  
+  display: flex; 
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;  
+  flex-direction: column;
+}
+
+.education {
+  margin: 20px;
+}
+
+.course {
+  color: var(--soft-coral);
+  font-family: var(--basic-sans-serif);
+}
