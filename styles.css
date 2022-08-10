@@ -10,19 +10,20 @@ html {
 :root {
   --neon-yellow: #ccff15;
   --soft-coral: rgb(255, 115, 148);
+  --white: white;
   --basic-sans-serif-font: arial;
   --asos-font: 'Poppins', sans-serif;
 }
 
 body {
   background-color: black;
-  color: white;
+  color: var(--white);
   /* not sure */
   /* font-family: 'Playfair Display', serif; */
 }
 
 .top-panel {
-  border-bottom: thin solid white;
+  border-bottom: thin solid var(--white);
   display: flex;
   justify-content: flex-end;
   padding: 10px;
@@ -65,7 +66,7 @@ nav li a span {
   align-items: center;
   justify-content: flex-start;
   transition: 0.5s;
-  color: white;
+  color: var(--white);
   font-size: 52px;
   text-transform: capitalize;
 }
@@ -92,7 +93,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel1 {
   font-size: 42px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;
   justify-content: flex-end;
   display: flex; 
@@ -101,7 +102,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel2 {
   font-size: 42px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;  
   display: flex; 
   justify-content: center;
@@ -145,7 +146,7 @@ nav li a:hover span:nth-child(2) {
 }
 
 .find-me-outer a div span {
-  color: white;
+  color: var(--white);
 }
 
 .codepen {
@@ -160,11 +161,11 @@ nav li a:hover span:nth-child(2) {
 }
 
 .github {
-  color: white;
+  color: var(--white);
 }
 
 .github-icon {
-  color: white;
+  color: var(--white);
 
   background-image: linear-gradient(
     to bottom right,   
@@ -189,12 +190,12 @@ nav li a:hover span:nth-child(2) {
 }
 
 .codepen-icon {
-  color: white;
+  color: var(--white);
 }
 
 .instagram-icon-inner1 {
   position: relative;
-  border: medium solid white;
+  border: medium solid var(--white);
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -203,7 +204,7 @@ nav li a:hover span:nth-child(2) {
 }
 
 .instagram-icon-inner2 {
-  border: medium solid white;
+  border: medium solid var(--white);
   height: 20px;
   width: 20px;
   display: inline-block;
@@ -214,7 +215,7 @@ nav li a:hover span:nth-child(2) {
 
 .instagram-icon-circle {
   position: absolute;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 4px;
   width: 4px;
   display: inline-block;
@@ -229,7 +230,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel3 {
   font-size: 22px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;  
   display: flex; 
   justify-content: center;
@@ -287,7 +288,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel4 {
   font-size: 32px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;  
   display: flex; 
   justify-content: center;
