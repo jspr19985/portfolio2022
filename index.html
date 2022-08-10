@@ -12,93 +12,109 @@
 </head>
   
   <body>
-  <div class="top-panel">
-    <div>
-    Joanna Sprott
-    </div>
-  </div>
-  <div class="page-outer">
+    <header class="top-panel"><div>Joanna Sprott</div></header>
 
-    <nav>
-      <li>
-        <a href="#">
-          <span>Bio</span>
-          <span class="selected">Bio</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Work Experience</span>
-          <span class="selected">Work Experience</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Education</span>
-          <span class="selected">Education</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Skills</span>
-          <span class="selected">Skills</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>About</span>
-          <span class="selected">About</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Find Me</span>
-          <span class="selected">Find Me</span>
-        </a>
-      </li>
-    </nav>
+    <main class="page-outer">
 
-    <section class="details-panel1">
-      <div class="panel-text">Associate Web Engineer at ASOS. <span class="new-opportunities">Open to new opportunities.</span></div>     
-      <div class="second-secion"></div>
-      <div class="profile-photo"></div>              
-    </section>
-    <!-- <section class="details-panel2">
-      <div class="panel-text find-me-outer">
-        <a href="https://github.com/jspr19985" target="_blank"><div> <i class="fa-brands fa-github github-icon"></i> <span class="github">Github</span></div></a>
-        <a href="https://codepen.io/jsp123" target="_blank"><div> <i class="fa-brands fa-codepen codepen-icon"></i> <span class="codepen">Codepen</span></div></a>
-        <a href="https://www.instagram.com/joannasprott/?hl=en" target="_blank"><div> <span class="instagram-icon">
-          <span class="instagram-icon-inner1">
-            <span class="instagram-icon-circle"></span>
-            <span class="instagram-icon-inner2"></span>            
-          </span>
-        </span> <span class="instagram">Instagram</span></div></a>
-      </section> -->
-    <!-- <section class="details-panel3">        
-      <section class="jobs">
-        <h2 class="company">asos</h2>         
-        <section>
-          <h3 class="job-role">Associate Web Engineer</h3>   
-          <div class="job-dates">Feb 22 - Present</div>
-          <div class="job-description">Maintenance of Product List Page and Saved List Page on <span class="asos-name">asos</span> website 
-            <span class="job-technologies">(JavaScript, HTML, CSS, React, TeamCity, git/github, New Relic)</span>.</div>
-        </section>
-        <section>
-          <h3 class="job-role">Senior QA Engineer</h3>
-          <div class="job-dates">Dec 2017 - Feb 22</div>
-          <div class="job-description">Maintenance of internal dashboard
-            <span class="job-technologies">(JavaScript, HTML, CSS, React, git/github, Node.js/Express, 
-              Docker, Docker Compose, Azure Devops, ElasticSearch, Linux)</span>.</div>
-        </section>
-      </section>      
-    </section> -->
-    <!-- <section class="details-panel4">
-      <div class="education">University of Glasgow:
-        <div class="course">Chemistry with Medicinal Chemistry (Msci Hons)</div>
-      </div>
-      <div class="education">Open University:
-        <div class="course">Computing and IT Practice</div>
-      </div>
-    </section> -->
-  </div>
-</body>
+      <nav>
+        <li>
+          <a href="#" id="defaultOpen" class="navlinks" onclick="showContent(event, 'bio')">
+            <span>Bio</span>
+            <span class="selected">Bio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="navlinks" onclick="showContent(event, 'workExperience')">
+            <span>Work Experience</span>
+            <span class="selected">Work Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="navlinks" onclick="showContent(event, 'education')">
+            <span>Education</span>
+            <span class="selected">Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="navlinks" onclick="showContent(event, 'skills')">
+            <span>Skills</span>
+            <span class="selected">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="navlinks" onclick="showContent(event, 'about')">
+            <span>About</span>
+            <span class="selected">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="navlinks" onclick="showContent(event, 'findMe')">
+            <span>Find Me</span>
+            <span class="selected">Find Me</span>
+          </a>
+        </li>
+      </nav>
+
+      <section class="content-panel tabcontent" id="bio">
+        <div class="panel-text">Associate Web Engineer at ASOS. <span class="new-opportunities">Open to new opportunities.</span></div>     
+        <div class="second-secion"></div>
+        <div class="profile-photo"></div>              
+      </section>
+
+      <section class="content-panel tabcontent" id="workExperience">        
+        <section class="jobs">
+          <h2 class="company">asos</h2>         
+          <section>
+            <h3 class="job-role">Associate Web Engineer</h3>   
+            <div class="job-dates">Feb 22 - Present</div>
+            <div class="job-description">Maintenance of Product List Page and Saved List Page on <span class="asos-name">asos</span> website 
+              <span class="job-technologies">(JavaScript, HTML, CSS, React, TeamCity, git/github, New Relic)</span>.</div>
+          </section>
+          <section>
+            <h3 class="job-role">Senior QA Engineer</h3>
+            <div class="job-dates">Dec 2017 - Feb 22</div>
+            <div class="job-description">Maintenance of internal dashboard
+              <span class="job-technologies">(JavaScript, HTML, CSS, React, git/github, Node.js/Express, 
+                Docker, Docker Compose, Azure Devops, ElasticSearch, Linux)</span>.</div>
+          </section>
+        </section>      
+      </section>
+
+      <section class="content-panel tabcontent" id="education">
+        <div class="education">University of Glasgow:
+          <div class="course">Chemistry with Medicinal Chemistry (Msci Hons)</div>
+        </div>
+        <div class="education">Open University:
+          <div class="course">Computing and IT Practice</div>
+        </div>
+      </section>
+
+      <section class="content-panel tabcontent" id="skills">
+        <div class="skills">Skills go here</div>
+      </section>
+
+      <section class="content-panel tabcontent" id="about">
+        <div class="skills">About goes here</div>
+      </section>
+
+      <section class="content-panel tabcontent" id="findMe">
+        <div class="panel-text find-me-outer">
+          <a href="https://github.com/jspr19985" target="_blank"><div> <i class="fa-brands fa-github github-icon"></i> <span class="github">Github</span></div></a> 
+          <a href="https://codepen.io/jsp123" target="_blank"><div> <i class="fa-brands fa-codepen codepen-icon"></i> <span class="codepen">Codepen</span></div></a>  
+          <a href="https://www.instagram.com/joannasprott/?hl=en" target="_blank">
+            <div> 
+              <span class="instagram-icon">
+                <span class="instagram-icon-inner1">
+                  <span class="instagram-icon-circle"></span>
+                  <span class="instagram-icon-inner2"></span>            
+                </span>
+              </span> 
+              <span class="instagram">Instagram</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      
+    </main> <!-- page-outer -->
+    <script src="script.js"></script>
+  </body>

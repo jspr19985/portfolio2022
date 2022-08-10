@@ -32,7 +32,7 @@ body {
   color: var(--white);
 }
 
-.top-panel {
+header {
   border-bottom: thin solid var(--white);
   display: flex;
   justify-content: flex-end;
@@ -42,14 +42,9 @@ body {
   font-family: var(--michroma-font);
 }
 
-.menu-outer {
+main {
   display: flex;
-  flex-direction: column;
-  margin: 30px;
-  width: 40%;
 }
-
-/* nav */
 
 nav li {
   position: relative;
@@ -89,43 +84,51 @@ nav li a:hover span:nth-child(2) {
   transform: translateY(-100%);
 }
 
-.selected {
+nav li a.active span, .selected {
   color: var(--neon-yellow);
   font-family: var(--basic-sans-serif-font);
 }
 
-/* nav */
-
-.page-outer {
-  display: flex;
-}
-
-.details-panel1 {
-  font-size: 42px;
-  width: 60%;
-  border: thin solid var(--white);
-  height: 700px;
-  justify-content: flex-end;
-  display: flex; 
-}
-
-.details-panel2 {
+.content-panel {
   font-size: 42px;
   width: 60%;
   border: thin solid var(--white);
   height: 700px;  
-  display: flex; 
+  display: flex;  
   justify-content: center;
   align-items: center;
+}
+
+#bio {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#workExperience {
+  font-size: 22px;
+  padding: 15px;  
+  flex-direction: column;
+}
+
+#education {
+  font-size: 32px;
+  align-items: flex-start;
+  padding: 15px;  
+  flex-direction: column;
+}
+
+#findMe {
   padding: 15px;
 }
 
+/* can this be moved to details panel without breaking all of them? */
 .panel-text {
   margin: 30px;
   font-family: var(--basic-sans-serif-font);
   font-weight: 900;
 }
 
+/* bio */
 .profile-photo {
   height: 200px;
   width: 200px;
@@ -151,13 +154,67 @@ nav li a:hover span:nth-child(2) {
   color: var(--soft-coral);
 }
 
-/* find-me */
-.find-me-outer a div {
-  margin: 10px;
+/* work experience */
+
+.company {
+  font-family: var(--asos-font);
+  letter-spacing: -4px;
+  font-size: 48px;
 }
+
+.jobs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.job-role {
+ color: var(--soft-coral);
+ font-family: var(--basic-sans-serif-font);
+ margin-bottom: 5px;
+}
+
+.job-dates {
+  font-family: var(--basic-sans-serif-font);
+  margin-bottom: 30px;
+}
+
+.job-description {
+  font-size: 28px;
+}
+
+.job-technologies {
+  color: var(--neon-yellow);
+  font-family: var(--basic-sans-serif-font);
+  font-size: 18px;
+}
+
+.asos-name {
+  font-family: var(--asos-font);
+  letter-spacing: -3px;
+}
+
+/* edcuation */
+
+.education {
+  margin: 20px;
+}
+
+.course {
+  color: var(--soft-coral);
+  font-family: var(--basic-sans-serif-font);
+}
+
+/* find-me */
 
 .find-me-outer a {
   text-decoration: none;
+}
+
+.find-me-outer a div {
+  margin: 10px;
 }
 
 .find-me-outer a div span {
@@ -238,81 +295,4 @@ nav li a:hover span:nth-child(2) {
   margin-left: 22px;
   margin-top: 3px;
   background-color: white;
-}
-
-/* work experience */
-
-.details-panel3 {
-  font-size: 22px;
-  width: 60%;
-  border: thin solid var(--white);
-  height: 700px;  
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  padding: 15px;  
-  flex-direction: column;
-}
-
-.company {
-  font-family: var(--asos-font);
-  letter-spacing: -4px;
-  font-size: 48px;
-}
-
-.jobs {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 30px;
-}
-
-.job-role {
- color: var(--soft-coral);
- font-family: var(--basic-sans-serif-font);
- margin-bottom: 5px;
-}
-
-.job-dates {
-  font-family: var(--basic-sans-serif-font);
-  margin-bottom: 30px;
-}
-
-.job-description {
-  font-size: 28px;
-}
-
-.job-technologies {
-  color: var(--neon-yellow);
-  font-family: var(--basic-sans-serif-font);
-  font-size: 18px;
-}
-
-.asos-name {
-  font-family: var(--asos-font);
-  letter-spacing: -3px;
-}
-
-/* edcuation */
-
-.details-panel4 {
-  font-size: 32px;
-  width: 60%;
-  border: thin solid var(--white);
-  height: 700px;  
-  display: flex; 
-  justify-content: center;
-  align-items: flex-start;
-  padding: 15px;  
-  flex-direction: column;
-}
-
-.education {
-  margin: 20px;
-}
-
-.course {
-  color: var(--soft-coral);
-  font-family: var(--basic-sans-serif-font);
 }
