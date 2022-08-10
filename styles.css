@@ -24,13 +24,12 @@ html {
   --background-image-grad-4: rgba(255, 204, 216, 0.6);
   --basic-sans-serif-font: arial;
   --asos-font: 'Poppins', sans-serif;
+  --michroma-font: 'Michroma', sans-serif;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
-  /* not sure */
-  /* font-family: 'Playfair Display', serif; */
 }
 
 .top-panel {
@@ -40,7 +39,7 @@ body {
   padding: 10px;
   font-size: 28px;
   font-weight: 100;
-  font-family: 'Michroma', sans-serif;
+  font-family: var(--michroma-font);
 }
 
 .menu-outer {
@@ -123,7 +122,7 @@ nav li a:hover span:nth-child(2) {
 
 .panel-text {
   margin: 30px;
-  font-family: arial;
+  font-family: var(--basic-sans-serif-font);
   font-weight: 900;
 }
 
@@ -253,10 +252,6 @@ nav li a:hover span:nth-child(2) {
   align-items: center;
   padding: 15px;  
   flex-direction: column;
-}
-
-.font1 {
-  font-family: arial;
 }
 
 .company {
