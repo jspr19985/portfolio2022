@@ -8,15 +8,26 @@ html {
 }
 
 :root {
+  --white: white;
+  --black: black;
   --neon-yellow: #ccff15;
   --soft-coral: rgb(255, 115, 148);
-  --white: white;
+  --insta-yellow: #ffff00;
+  --insta-orange: #ff3300;
+  --insta-purple: #cc00cc;
+  --github-purple-1: #6600ff;
+  --github-purple-2: #000066;
+  --github-purple-3: #660066;
+  --background-image-grad-1: rgba(255, 196, 20, 0.6);
+  --background-image-grad-2: rgba(204, 255, 21, 0.6);
+  --background-image-grad-3: rgba(255, 115, 148, 0.6);
+  --background-image-grad-4: rgba(255, 204, 216, 0.6);
   --basic-sans-serif-font: arial;
   --asos-font: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: black;
+  background-color: var(--black);
   color: var(--white);
   /* not sure */
   /* font-family: 'Playfair Display', serif; */
@@ -125,15 +136,20 @@ nav li a:hover span:nth-child(2) {
   box-shadow: 5px 10px inset;
   
   background-image:
-    linear-gradient(to bottom right, rgba(255, 196, 20, 0.6), rgba(204, 255, 21, 0.6), rgba(255, 115, 148, 0.6), rgba(255, 204, 216, 0.6)),
+    linear-gradient(
+      to bottom right, 
+      var(--background-image-grad-1), 
+      var(--background-image-grad-2), 
+      var(--background-image-grad-3), 
+      var(--background-image-grad-4)),
     url('profile.png');
     background-blend-mode: hard-light;
     mix-blend-mode: hard-light;
     background-size: cover;
 }
 
-.new-opportunies {
-  color: var(----soft-coral);
+.new-opportunities {
+  color: var(--soft-coral);
 }
 
 /* find-me */
@@ -169,9 +185,9 @@ nav li a:hover span:nth-child(2) {
 
   background-image: linear-gradient(
     to bottom right,   
-    #6600ff,
-    #000066,
-    #660066   
+    var(--github-purple-1),
+    var(--github-purple-2),
+    var(--github-purple-3)  
     );
     border-radius: 5px;
 }
@@ -179,9 +195,9 @@ nav li a:hover span:nth-child(2) {
 .instagram-icon {
   background-image: linear-gradient(
     to top right,   
-    #ffff00,
-    #ff3300,
-    #cc00cc   
+    var(--insta-yellow),
+    var(--insta-orange),
+    var(--insta-purple)  
     );
     border-radius: 10px;
     height: 45px;
