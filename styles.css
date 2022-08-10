@@ -8,27 +8,38 @@ html {
 }
 
 :root {
+  --white: white;
+  --black: black;
   --neon-yellow: #ccff15;
   --soft-coral: rgb(255, 115, 148);
+  --insta-yellow: #ffff00;
+  --insta-orange: #ff3300;
+  --insta-purple: #cc00cc;
+  --github-purple-1: #6600ff;
+  --github-purple-2: #000066;
+  --github-purple-3: #660066;
+  --background-image-grad-1: rgba(255, 196, 20, 0.6);
+  --background-image-grad-2: rgba(204, 255, 21, 0.6);
+  --background-image-grad-3: rgba(255, 115, 148, 0.6);
+  --background-image-grad-4: rgba(255, 204, 216, 0.6);
   --basic-sans-serif-font: arial;
   --asos-font: 'Poppins', sans-serif;
+  --michroma-font: 'Michroma', sans-serif;
 }
 
 body {
-  background-color: black;
-  color: white;
-  /* not sure */
-  /* font-family: 'Playfair Display', serif; */
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .top-panel {
-  border-bottom: thin solid white;
+  border-bottom: thin solid var(--white);
   display: flex;
   justify-content: flex-end;
   padding: 10px;
   font-size: 28px;
   font-weight: 100;
-  font-family: 'Michroma', sans-serif;
+  font-family: var(--michroma-font);
 }
 
 .menu-outer {
@@ -65,7 +76,7 @@ nav li a span {
   align-items: center;
   justify-content: flex-start;
   transition: 0.5s;
-  color: white;
+  color: var(--white);
   font-size: 52px;
   text-transform: capitalize;
 }
@@ -92,7 +103,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel1 {
   font-size: 42px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;
   justify-content: flex-end;
   display: flex; 
@@ -101,7 +112,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel2 {
   font-size: 42px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;  
   display: flex; 
   justify-content: center;
@@ -111,7 +122,7 @@ nav li a:hover span:nth-child(2) {
 
 .panel-text {
   margin: 30px;
-  font-family: arial;
+  font-family: var(--basic-sans-serif-font);
   font-weight: 900;
 }
 
@@ -124,15 +135,20 @@ nav li a:hover span:nth-child(2) {
   box-shadow: 5px 10px inset;
   
   background-image:
-    linear-gradient(to bottom right, rgba(255, 196, 20, 0.6), rgba(204, 255, 21, 0.6), rgba(255, 115, 148, 0.6), rgba(255, 204, 216, 0.6)),
+    linear-gradient(
+      to bottom right, 
+      var(--background-image-grad-1), 
+      var(--background-image-grad-2), 
+      var(--background-image-grad-3), 
+      var(--background-image-grad-4)),
     url('profile.png');
     background-blend-mode: hard-light;
     mix-blend-mode: hard-light;
     background-size: cover;
 }
 
-.new-opportunies {
-  color: var(----soft-coral);
+.new-opportunities {
+  color: var(--soft-coral);
 }
 
 /* find-me */
@@ -145,7 +161,7 @@ nav li a:hover span:nth-child(2) {
 }
 
 .find-me-outer a div span {
-  color: white;
+  color: var(--white);
 }
 
 .codepen {
@@ -160,17 +176,17 @@ nav li a:hover span:nth-child(2) {
 }
 
 .github {
-  color: white;
+  color: var(--white);
 }
 
 .github-icon {
-  color: white;
+  color: var(--white);
 
   background-image: linear-gradient(
     to bottom right,   
-    #6600ff,
-    #000066,
-    #660066   
+    var(--github-purple-1),
+    var(--github-purple-2),
+    var(--github-purple-3)  
     );
     border-radius: 5px;
 }
@@ -178,9 +194,9 @@ nav li a:hover span:nth-child(2) {
 .instagram-icon {
   background-image: linear-gradient(
     to top right,   
-    #ffff00,
-    #ff3300,
-    #cc00cc   
+    var(--insta-yellow),
+    var(--insta-orange),
+    var(--insta-purple)  
     );
     border-radius: 10px;
     height: 45px;
@@ -189,12 +205,12 @@ nav li a:hover span:nth-child(2) {
 }
 
 .codepen-icon {
-  color: white;
+  color: var(--white);
 }
 
 .instagram-icon-inner1 {
   position: relative;
-  border: medium solid white;
+  border: medium solid var(--white);
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -203,7 +219,7 @@ nav li a:hover span:nth-child(2) {
 }
 
 .instagram-icon-inner2 {
-  border: medium solid white;
+  border: medium solid var(--white);
   height: 20px;
   width: 20px;
   display: inline-block;
@@ -214,7 +230,7 @@ nav li a:hover span:nth-child(2) {
 
 .instagram-icon-circle {
   position: absolute;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 4px;
   width: 4px;
   display: inline-block;
@@ -229,17 +245,13 @@ nav li a:hover span:nth-child(2) {
 .details-panel3 {
   font-size: 22px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;  
   display: flex; 
   justify-content: center;
   align-items: center;
   padding: 15px;  
   flex-direction: column;
-}
-
-.font1 {
-  font-family: arial;
 }
 
 .company {
@@ -287,7 +299,7 @@ nav li a:hover span:nth-child(2) {
 .details-panel4 {
   font-size: 32px;
   width: 60%;
-  border: thin solid white;
+  border: thin solid var(--white);
   height: 700px;  
   display: flex; 
   justify-content: center;
